@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oscar Bonfiglio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        (function () {
+        var t = "light";
+        try { t = localStorage.getItem("portfolio-theme") || "light"; } catch (e) {}
+        document.documentElement.setAttribute("data-theme", t);
+        })();
+    </script>
+
+</head>
+
+<body>
+    <button class="theme-switch" id="themeToggle" type="button" role="switch" aria-checked="false" aria-label="Dark mode">
+    <span class="icon sun" aria-hidden="true">☀</span>
+    <span class="icon moon" aria-hidden="true">☾</span>
+    <span class="thumb"></span>
+    </button>
+    
+    <header class="hero">
+    <div>
+        <h1>Oscar Bonfiglio</h1>
+        <p> California State University San Marocs</p>
+        <p>Computer science student building software with Python, C++, and Django.</p>
+
+      <div class="cue">Scroll to see my projects</div>
+    </div>
+  </header>
+
+  <main class="work">
+    <section aria-labelledby="proj">
+      <h2 id="proj">Projects</h2>
+      <div class="stack">
+        <article class="card" style="--i:0">
+          <div>
+            <h3>My Website</h3>
+            <p>I created my personal website to showcase who I am, the projects I’ve built, and the skills I’m developing as a programmer. 
+              It serves as a central place for visitors to learn about my work, explore my projects, and see my growth as a developer.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Flask</li></ul>
+          </div>
+          <a class="btn" href="https://example.com" target="_blank" rel="noopener">Visit site</a>
+        </article>
+
+        <article class="card" style="--i:1">
+          <div>
+            <h3>Radar Intercept</h3>
+            <p>A 2D C++ simulation of radar tracking and missile interception. Pilot an aircraft, 
+              detect nearby targets with a rotating radar sweep, and launch guided missiles in a real-time SDL2 environment.</p>
+            <ul class="tags"><li>C++</li><li>SDL2 </li></ul>
+          </div>
+          <a class="btn" href="https://github.com/Oscar-Bonfiglio/Radar_Intercept" target="_blank" rel="noopener">View code</a>
+        </article>
+
+        <article class="card" style="--i:2">
+          <div>
+            <h3>NFL Similator</h3>
+            <p>NFL Sim is an interactive NFL-style season simulator built with Python and Flask. Users can create a full 18-week season, 
+              simulate individual games or entire seasons, follow team standings and statistics, 
+              build playoff brackets, and crown a Super Bowl champion. The project includes customizable team ratings, 
+              weather effects, realistic football scoring, and a browser-based control room for managing the simulation.</p>
+            <ul class="tags"><li>Python</li> <li>JavaScript</li> <li>HTML</li> <li>CSS</li></ul>
+          </div>
+          <a class="btn" href="https://github.com/Oscar-Bonfiglio/NFL_Simulator" target="_blank" rel="noopener">View code</a>
+        </article>
+      </div>
+
+    </section>
+
+    <div class="sidebar">
+      <aside class="skills" aria-labelledby="sk">
+        <h2 id="sk">Skills</h2>
+        <ul>
+          <li>Python</li>
+          <li>C++</li>
+          <li>Flask</li>
+          <li>Django</li>
+          <li>MIPS Assembly</li>
+          <li>SQL</li>
+          <li>JavaScript</li>
+        </ul>
+      </aside>
+
+      <aside class="aboutMe" aria-labelledby="about">
+        <h2 id="about">About Me</h2>
+        <p>I’m a Computer Science major with a passion for coding, problem-solving, and building projects that bring ideas to life.
+          I enjoy challenging myself through programming and mathematics, and I’m always looking for opportunities to learn new skills 
+          and improve. Outside of technology, I’m a big football fan and enjoy exploring ways to combine my interests in sports and software.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <nav aria-label="Contact links">
+      <a href="https://github.com/Oscar-Bonfiglio" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/oscar-bonfiglio-75378127b/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:oscarbonfiglio09@gmail.com">Gmail</a>
+    </nav>
+    <small>© 2026 Oscar Bonfiglio</small>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
